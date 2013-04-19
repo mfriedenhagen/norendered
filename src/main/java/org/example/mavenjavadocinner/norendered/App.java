@@ -6,7 +6,20 @@ package org.example.mavenjavadocinner.norendered;
  */
 public class App {
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+    private static class StaticInner {
+
+        private void doPrivate() {
+            System.out.println("Hello World from StaticInner!");
+        }
+        
     }
+    public static void main(String... args) {
+        doPrivate();
+        new StaticInner().doPrivate();
+    }
+
+    private static void doPrivate() {
+        System.out.println("Hello World from main!");
+    }
+    
 }

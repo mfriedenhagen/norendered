@@ -32,7 +32,8 @@
                         <id>default</id>
                         <configuration>
                             <notimestamp>true</notimestamp>
-                            <quiet>true</quiet>
+                            <quiet>false</quiet>
+                            <show>private</show>
                         </configuration>
                         <reports>
                             <report>javadoc</report>
